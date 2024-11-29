@@ -1,0 +1,373 @@
+.LostDogMainWrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.LostDogMainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.LostDogMainLogo {
+  height: 40px;
+}
+
+.LostDogMainHambuger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.LostDogHamburgerBarSub {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+.LostDogMainNavbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.LostDogNavItemText {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.LostDogMainContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* arrow area  */
+.LostDogArrowBtn {
+  display: flex;
+  align-items: center;
+}
+
+.LostDogArrowBtn > img {
+  width: 20px;
+  background-color: #000;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.LostDogArrowIcon {
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.LostDogMainTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* image upload container  */
+.LostDogMainImageUploadContainer {
+  margin-top: 2rem;
+}
+
+.LostDogMainFileLabel {
+  cursor: pointer;
+}
+
+/* image upload view after select on your computer */
+.LostDogImageUpload {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 15px;
+  height: 200px;
+}
+
+.LostDogSelectedImage {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  max-height: 200px; /* Limit the height of the image to make it less tall */
+  object-fit: contain; /* Maintain the image's aspect ratio while scaling */
+  display: block; /* Center the image properly */
+  margin: 0 auto; /* Ensure the image is centered horizontally */
+}
+
+/* Hide the default file input */
+.HiddenFileInput {
+  display: none;
+}
+
+/* Lost Dog Information  */
+.LostDogTextInformation {
+  font-size: 25px;
+}
+
+/* dog name, breed, color, size, other details  */
+.LostDogMainInfo > input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+/* gender area  styling*/
+input[type="radio"] {
+  width: 50%;
+}
+
+.LostDogRadioButtons {
+  display: flex;
+  margin: 10px 0;
+  gap: 1rem;
+}
+
+.LostDogGenderOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* width: 50%; */
+  padding: 4px;
+  width: 50%;
+}
+
+.LostDogGenderIcon {
+  display: flex;
+
+  height: 25px;
+  /* margin-right: 10px; */
+}
+
+/* location area  styling*/
+.LostDogLocationInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.LostDogLocationInput input {
+  width: 95%; /* Ensure location input matches the other fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.LostDogLocationIcon {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+}
+
+/* button area style   */
+.LostDogSubmitButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #7f8c8d;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.LostDogSubmitButton:hover {
+  background-color: #5f6b6f;
+}
+
+.LostDogFooter {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.LostDogFooterIcon {
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Home, Profile, Logout modal  */
+/* ----------------------Hamburger Menu */
+.LostDogMenuHamburgerBtn {
+  position: absolute;
+  top: 90px; /* Adjust the top position to be below the header */
+  right: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 150px;
+  text-align: left;
+  z-index: 9999; /* Ensure the menu appears above other content */
+  border: 1px solid #000;
+}
+
+.LostDogMenuHamburgerBtn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.LostDogMenuHamburgerBtn li {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+.LostDogMenuHamburgerBtn li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .LostDogMainWrapper {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .LostDogMainHeader {
+    padding: 10px;
+  }
+
+  .LostDogMainLogo {
+    height: 30px;
+  }
+
+  .LostDogHamburgerBarSub {
+    width: 20px;
+    height: 2px;
+  }
+
+  .LostDogMainNavbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .LostDogNavItemText {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .LostDogMainContent {
+    padding: 15px;
+  }
+
+  .LostDogMainTitle {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .LostDogRadioButtons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .LostDogGenderOption {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .LostDogSubmitButton {
+    font-size: 14px;
+  }
+
+  .LostDogFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For Tablets (min-width: 481px and max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .LostDogMainWrapper {
+    padding: 20px;
+    max-width: 80%;
+  }
+
+  .LostDogMainHeader {
+    padding: 15px;
+  }
+
+  .LostDogMainLogo {
+    height: 35px;
+  }
+
+  .LostDogHamburgerBarSub {
+    width: 22px;
+    height: 3px;
+  }
+
+  .LostDogMainNavbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .LostDogNavItemText {
+    font-size: 16px;
+  }
+
+  .LostDogMainContent {
+    padding: 18px;
+  }
+
+  .LostDogMainTitle {
+    font-size: 22px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 15px;
+  }
+
+  .LostDogRadioButtons {
+    gap: 1.5rem;
+  }
+
+  .LostDogGenderOption {
+    width: 45%;
+  }
+
+  .LostDogSubmitButton {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,213 @@
+.LostDogProfileMainWrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.LostDogProfileMainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.LostDogProfileMainLogo {
+  height: 40px;
+}
+
+/* navbar (missing, found ) */
+.LostDogProfileMainHambuger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.LostDogProfileHamburgerBarSub {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+.LostDogProfileMainNavbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.LostDogProfileNavItemText {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.LostDogProfileMainContent {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* arrow area  */
+.LostDogProfileArrowBtn {
+  display: flex;
+  align-items: center;
+}
+
+.LostDogProfileArrowBtn > img {
+  width: 20px;
+  background-color: #000;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.LostDogProfileArrowIcon {
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Title of form  */
+/* .LostDogProfileMainTitle {
+  font-size: 24px;
+  font-weight: bold;
+} */
+
+/* main container of all forms  */
+.LostDogProfile-main-container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* main container of forms    */
+.LostDogProfileMainCards {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.LostDogProfileMissingDog {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: auto;
+
+}
+
+.LostDogProfileInfo {
+  margin-top: 10px;
+}
+
+.LostDogProfilePetId {
+  font-size: 14px;
+  color: gray;
+}
+
+.LostDogProfileName {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.LostDogProfileBreed {
+  font-size: 18px;
+  color: gray;
+}
+
+.LostDogProfileDetails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.LostDogProfileGender,
+.LostDogProfileAge {
+  font-size: 16px;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.LostDogProfileEditButton {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.LostDogProfileLastSeen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.LostDogProfileLocationIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.LostDogProfileColor,
+.LostDogProfileSize,
+.LostDogProfileUniqueMarkings,
+.LostDogProfileTimestamp {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.LostDogProfilePostedBy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.LostDogProfileUserIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.LostDogProfileMessageButton {
+  background-color: white;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-size: 20px;
+}
+
+.LostDogProfileMessageIcon {
+  width: 20px;
+  height: 20px;
+}

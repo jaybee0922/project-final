@@ -1,0 +1,204 @@
+/* Default styles for larger screens */
+.register-form-container {
+  width: 20%;
+  height: auto;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.register-logo img {
+  width: 200px;
+  /* margin-bottom: 20px; */
+  filter: brightness(92%);
+  margin-bottom: -30%;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+
+/* Profile Picture Upload Section */
+.profile-pic-container {
+  /* margin-bottom: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.file-input {
+  display: none;
+}
+
+/* Inputs (Full name, Email, Contact Number, Password, Confirm Password) and Register Button */
+.input,
+.register-button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.register-button {
+  background-color: #030303;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.register-button:hover {
+  background-color: #222;
+}
+
+.register-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Password container */
+.password-container {
+  position: relative;
+  width: 90%;
+  /* margin-bottom: 10px; */
+}
+
+/* Inputs with Show Password icon inside */
+.input-with-icon {
+  width: 100%;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Password Icon inside the input */
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+/* Styling for the "Submit" button to resemble a link */
+.register-sign-up-link-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.register-sign-up-link-button:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* ----------------Error message */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ----------------Media Queries for different screen sizes */
+
+/* For screens smaller than 1024px (tablets, laptops) */
+@media (max-width: 1024px) {
+  .register-form-container {
+    width: 40%;
+  }
+
+  .register-logo img {
+    width: 180px;
+  }
+
+  .input,
+  .register-button {
+    font-size: 14px;
+  }
+}
+
+/* For screens smaller than 768px (large mobile screens) */
+@media (max-width: 768px) {
+  .register-form-container {
+    width: 60%;
+  }
+
+  .register-logo img {
+    width: 150px;
+  }
+
+  .input,
+  .register-button {
+    font-size: 14px;
+  }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  .register-form-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .register-logo img {
+    width: 120px;
+  }
+
+  .input,
+  .register-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .register-text {
+    font-size: 12px;
+  }
+}
